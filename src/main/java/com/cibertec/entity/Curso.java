@@ -12,13 +12,6 @@ public class Curso {
 
 	private int idCurso;
 	private String nombre;
-	private String categoria;
-	
-
-	
-	
+	private String tipo;
 	
 }
-
-
-
