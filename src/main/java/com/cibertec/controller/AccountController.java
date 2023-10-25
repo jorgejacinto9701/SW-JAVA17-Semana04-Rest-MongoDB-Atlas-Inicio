@@ -1,4 +1,4 @@
-	package com.cibertec.controller;
+package com.cibertec.controller;
 
 import java.util.List;
 
