@@ -21,6 +21,6 @@ public class AccountController {
 	@GetMapping
 	@ResponseBody
 	public List<Account> lista(){
-		return service.listaCurso();
+		return service.listaAccount();
 	}
 }
