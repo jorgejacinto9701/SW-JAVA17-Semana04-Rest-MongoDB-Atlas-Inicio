@@ -1,4 +1,4 @@
-package com.cibertec.controller;
+	package com.cibertec.controller;
 
 import java.util.List;
 
@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cibertec.entity.Curso;
-import com.cibertec.service.CursoService;
+import com.cibertec.entity.Account;
+import com.cibertec.service.AccountService;
 
 @RestController
-@RequestMapping("/rest/curso")
-public class CursoController {
+@RequestMapping("/rest/accounts")
+public class AccountController {
 
 	@Autowired
-	private CursoService service;
+	private AccountService service;
 	
 	@GetMapping
 	@ResponseBody
-	public List<Curso> lista(){
+	public List<Account> lista(){
 		return service.listaCurso();
 	}
 }
