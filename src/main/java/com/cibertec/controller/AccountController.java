@@ -42,4 +42,10 @@ public class AccountController {
 	public List<Account> porProducto(@PathVariable("producto") String producto){
 		return service.listaArrayProducto(producto);
 	}
+	
+	@GetMapping("/cantidadPorProducto/{producto}")
+	@ResponseBody
+	public Integer cantidadPorProducto(@PathVariable("producto") String producto){
+		return service.cuentaArrayProducto(producto);
+	}
 }

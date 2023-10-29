@@ -34,4 +34,9 @@ public class AccountServiceImpl implements AccountService{
 		return repository.listaArrayProducto(producto);
 	}
 
+	@Override
+	public Integer cuentaArrayProducto(String producto) {
+		return repository.cuentaArrayProducto(producto);
+	}
+
 }
