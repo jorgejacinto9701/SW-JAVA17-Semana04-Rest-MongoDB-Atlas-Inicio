@@ -19,4 +19,19 @@ public class AccountServiceImpl implements AccountService{
 		return repository.findAll();
 	}
 
+	@Override
+	public List<Account> listaCuentaPorId(int id) {
+		return repository.listaCuentaPorId(id);
+	}
+
+	@Override
+	public List<Account> listaCuentaPorLimitRango(int desde, int hasta) {
+		return repository.listaCuentaPorLimitRango(desde, hasta);
+	}
+
+	@Override
+	public List<Account> listaArrayProducto(String producto) {
+		return repository.listaArrayProducto(producto);
+	}
+
 }
